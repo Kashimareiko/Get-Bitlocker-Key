@@ -7,6 +7,8 @@ if ($powershellversion -lt 4){
 else
 {
 
+# NOT FINISHED
+
 $bitlockerkey = (Get-BitLockerVolume -MountPoint C).KeyProtector.RecoveryPassword
 $pcsystemtype = (Get-WmiObject -Class Win32_ComputerSystem).PCSystemType
 if ($pcsystemtype -eq "2"){
